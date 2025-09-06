@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scanner</title>
+</head>
+<body>
+    <center>
+        <p>worlds most eyeblinding scanner of alltime. this is not eyecandy in any way.</p>
+        <button type="button" id="scanner" onclick="scan()">begin scan</button>
+    </center>
+    <div id="hai">
+        <center id="hello">
+
+        </center>
+    </div>
+    <script>
+        function scan()
+        {
+            document.getElementById("hello").innerHTML = "";
+            var body = document.body.innerHTML.toString();
+            var head = document.head.innerHTML.toString();
+            var h1 = document.createElement('H1');
+            h1.innerText = "body";
+            document.getElementById("hello").appendChild(h1);
+            var p = document.createElement('P');
+            p.innerText = body
+            document.getElementById("hello").appendChild(p);
+            var h12 = document.createElement('H1');
+            h12.innerText = "head";
+            document.getElementById("hello").appendChild(h12);
+            var p2 = document.createElement('P');
+            p2.innerText = head
+            document.getElementById("hello").appendChild(p2);
+        }
+    </script>
+</body>
+</html>
